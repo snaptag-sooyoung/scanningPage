@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import AvImg from "../src/Assets/av.jpg";
 
 function App() {
-  // const [startTime, setStartTime] = useState();
   const [leftTime, setLeftTime] = useState(3);
 
   useEffect(() => {
@@ -17,7 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <div>{leftTime}초 후 페이지 이동</div>
+      <div className="container">
+        <img src={AvImg} alt="describe img" />
+      </div>
     </div>
   );
 }
