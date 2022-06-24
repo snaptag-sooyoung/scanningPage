@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     if (leftTime === 0) {
-      window.location.replace("http://www.naver.com");
+      window.location.replace("https://mall.lottechilsung.co.kr/");
     } else {
       setTimeout(() => {
         setLeftTime(leftTime - 1);
@@ -15,7 +15,11 @@ function App() {
     }
   }, [leftTime]);
 
-  return <div className="App">{leftTime}초 후 페이지 이동</div>;
+  return (
+    <div className="App">
+      <div>{leftTime}초 후 페이지 이동</div>
+    </div>
+  );
 }
 
 export default App;
